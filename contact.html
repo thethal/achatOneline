@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contactez-nous</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #eef2f3; }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      background-color: #111; color: white; padding: 20px 50px;
+    }
+    .logo {
+      display: flex; align-items: center;
+    }
+    .logo img { height: 40px; margin-right: 10px; border-radius: 10px; }
+    nav a {
+      color: white; text-decoration: none; margin-left: 20px;
+      font-weight: bold; transition: color 0.3s;
+    }
+    nav a:hover { color: #00aced; }
+    .hero {
+      background: url('img-accueil.jpg') center/cover no-repeat;
+      height: 80vh; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    form {
+      max-width: 500px; margin: 50px auto; background: white;
+      padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    input, textarea {
+      width: 100%; padding: 10px; margin-bottom: 15px;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+    input[type="submit"] {
+      background: #00aced; color: white; border: none;
+      cursor: pointer; font-size: 1rem;
+    }
+    input[type="submit"]:hover { background: #007ba7; }
+
+  </style>
+  
+  <header>
+    <div class="logo">
+      <img src="/images/logo.jfif" alt="logo de la boutique">
+      <h1>AchatOneline</h1>
+    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <form action="#" method="post">
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <input type="submit" value="Envoyer">
+  </form>
+
+  <footer style="background-color: #333; color: white; padding: 30px 20px; display: flex; flex-wrap: wrap; justify-content: space-between;">
+  <!-- Section À propos -->
+  <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+    <h3 style="margin-bottom: 10px;">À propos</h3>
+    <p style="font-size: 14px; line-height: 1.6;">
+      Bienvenue sur notre boutique en ligne. Nous proposons une large gamme de produits de qualité pour tous vos besoins quotidiens. Livraison rapide et service client disponible 7j/7.
+    </p>
+  </div>
+
+  <!-- Liens utiles -->
+  <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+    <h3 style="margin-bottom: 10px;">Liens utiles</h3>
+    <ul style="list-style: none; padding: 0; font-size: 14px;">
+      <li><a href="index.html" style="color: white; text-decoration: none;">Accueil</a></li>
+      <li><a href="produits.html" style="color: white; text-decoration: none;">Nos Produits</a></li>
+      <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+      <li><a href="#" style="color: white; text-decoration: none;">FAQ</a></li>
+    </ul>
+  </div>
+
+  <!-- Suivez-nous -->
+  <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+    <h3 style="margin-bottom: 10px;">Suivez-nous</h3>
+    <p>
+      <a href="#" style="margin-right: 10px; color: white; font-size: 20px;"><i class="fab fa-facebook"></i></a>
+      <a href="#" style="margin-right: 10px; color: white; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+      <a href="#" style="margin-right: 10px; color: white; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="margin-right: 10px; color: white; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+    </p>
+    <p style="font-size: 14px;">Email : contact@boutique.com</p>
+    <p style="font-size: 14px;">Téléphone : +241 01 02 03 04</p>
+  </div>
+
+  <div style="width: 100%; text-align: center; margin-top: 20px; border-top: 1px solid #555; padding-top: 10px; font-size: 13px;">
+    &copy; @thales TP 2025
+  </div>
+</footer>
+</body>
+</html>

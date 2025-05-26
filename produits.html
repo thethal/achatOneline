@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos Produits</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      background-color: #111; color: white; padding: 20px 50px;
+    }
+    .logo {
+      display: flex; align-items: center;
+    }
+    .logo img { height: 40px; margin-right: 10px; border-radius: 10px;}
+    nav a {
+      color: white; text-decoration: none; margin-left: 20px;
+      font-weight: bold; transition: color 0.3s;
+    }
+    nav a:hover { color: #00aced; }
+    .hero {
+      background: url('img-accueil.jpg') center/cover no-repeat;
+      height: 80vh; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    h1 { margin-bottom: 20px; }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px; padding: 40px;
+    }
+    .product {
+      background: white; padding: 20px; border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      cursor: pointer;
+    }
+    .product img {
+      width: 100%; height: 200px; object-fit: cover; border-radius: 5px;
+    }
+    .product h2 { font-size: 1.2rem; margin: 10px 0; }
+    .product p { color: #666; font-size: 0.95rem; }
+    .price { font-weight: bold; margin: 10px 0; color: #00aced; }
+    .btn { background: #00aced; color: white; padding: 10px; text-decoration: none; border-radius: 5px; display: inline-block; }
+
+  </style>
+
+
+  <header>
+    <div class="logo">
+      <img src="/images/logo.jfif" alt="logo de la boutique">
+      <h1>AchatOneline</h1>
+    </div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="grid">
+    
+<div class="product">
+  <a href="details.html" style="text-decoration: none; color: inherit;">
+    <img src="/images/phone.jfif" alt="Image produit 1">
+  </a> 
+    <h2>SamSunG S8+</h2>
+    <p>Smartphone multi usage de bonne qualité</p>
+    <div class="price">65 000 FCFA</div>
+    <div class="btn">Acheter</div>
+  </div>
+    <div class="product">
+      <img src="images/phone2.jfif" alt="Image produit 1">
+      <h2>Comon 50 Pro Max</h2>
+      <p>Dernier model en date pour les pro du gaming</p>
+      <div class="price">415 000 FCFA</div>.
+      <a href="#" class="btn">Acheter</a>
+    </div>
+    <div class="product">
+      <img src="/images/phone3.jfif" alt="Image produit 2">
+      <h2>Iconic 4</h2>
+      <p>Téléphone portable simple. Durabilité Garantie</p>
+      <div class="price">25 000 FCFA</div>
+      <a href="#" class="btn">Acheter</a>
+    </div>
+    <div class="product">
+      <img src="images/cosmetic.jfif" alt="Image produit 1">
+      <h2>Brand</h2>
+      <p>Assurer votre feminité.</p>
+      <div class="price">35 000 FCFA</div>
+      <a href="#" class="btn">Acheter</a>
+    </div>
+    <div class="product">
+      <img src="/images/cosmetic2.jfif" alt="Image produit 2">
+      <h2>Cosmetic</h2>
+      <p>La femme à l'état pure.</p>
+      <div class="price">45 000 FCFA</div>
+      <a href="#" class="btn">Acheter</a>
+    </div>
+    <div class="product">
+      <img src="/images/chemise.jfif" alt="Image produit 1">
+      <h2>Chemisette</h2>
+      <p>Petite chemise de ville.</p>
+      <div class="price">15 000 FCFA</div>
+      <a href="#" class="btn">Acheter</a>
+    </div>
+    <div class="product">
+      <img src="/images/pull.jfif" alt="Image produit 2">
+      <h2>Pull Over</h2>
+      <p>Derniere collection Game Of Throne: "L'Hiver Vient"</p>
+      <div class="price">25 000 FCFA</div>
+      <a href="#" class="btn">Acheter</a>
+    </div>
+    <div class="product">
+      <img src="/images/pc_gamer1.jfif" alt="Image produit 1">
+      <h2>PC Gamer</h2>
+      <p>Pour vos jeux et consor</p>
+      <div class="price">315 000 FCFA</div>
+      <a href="#" class="btn">Acheter</a>
+    </div>
+    <div class="product">
+      <img src="/images/pc_gamer2.jfif" alt="Image produit 2">
+      <h2>PC Gamer RTX</h2>
+      <p>Pour une meilleur performence dans vos jeux</p>
+      <div class="price">125 000 FCFA</div>
+      <a href="#" class="btn">Acheter</a>
+    </div>
+    
+  </div>
+
+  <footer style="background-color: #333; color: white; padding: 30px 20px; display: flex; flex-wrap: wrap; justify-content: space-between;">
+  <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+    <h3 style="margin-bottom: 10px;">À propos</h3>
+    <p style="font-size: 14px; line-height: 1.6;">
+      Bienvenue sur notre boutique en ligne. Nous proposons une large gamme de produits de qualité pour tous vos besoins quotidiens. Livraison rapide et service client disponible 7j/7.
+    </p>
+  </div>
+
+  <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+    <h3 style="margin-bottom: 10px;">Liens utiles</h3>
+    <ul style="list-style: none; padding: 0; font-size: 14px;">
+      <li><a href="index.html" style="color: white; text-decoration: none;">Accueil</a></li>
+      <li><a href="produits.html" style="color: white; text-decoration: none;">Nos Produits</a></li>
+      <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+      <li><a href="#" style="color: white; text-decoration: none;">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+    <h3 style="margin-bottom: 10px;">Suivez-nous</h3>
+    <p>
+      <a href="#" style="margin-right: 10px; color: white; font-size: 20px;"><i class="fab fa-facebook"></i></a>
+      <a href="#" style="margin-right: 10px; color: white; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+      <a href="#" style="margin-right: 10px; color: white; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="margin-right: 10px; color: white; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+    </p>
+    <p style="font-size: 14px;">Email : contact@boutique.com</p>
+    <p style="font-size: 14px;">Téléphone : +241 01 02 03 04</p>
+  </div>
+
+  <div style="width: 100%; text-align: center; margin-top: 20px; border-top: 1px solid #555; padding-top: 10px; font-size: 13px;">
+    &copy; @thales TP 2025
+  </div>
+</footer>
+</body>
+</html>
